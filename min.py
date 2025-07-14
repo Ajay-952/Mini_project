@@ -29,6 +29,7 @@ def main():
     model = train_model(data)
 
     user_input = st.text_area("✉️ Write your email content here:")
+    print("checking for the sapm email")
 
     if st.button("Check"):
         if user_input.strip() == "":
